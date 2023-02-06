@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {FormsModule} from "@angular/forms";
+import {ReactiveFormsModule} from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LdapListComponent } from './Model/ldap-list.component';
@@ -15,6 +16,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { LdapDetailComponent } from './ldap-detail/ldap-detail.component';
+import { LdapEditComponent } from './ldap-edit/ldap-edit.component';
+import { LdapAddComponent } from './ldap-add/ldap-add.component';
+import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,9 @@ import { LdapDetailComponent } from './ldap-detail/ldap-detail.component';
     LdapListComponent,
     PageNotFoundComponent,
     NavbarComponent,
-    LdapDetailComponent
+    LdapEditComponent,
+    LdapAddComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +41,7 @@ import { LdapDetailComponent } from './ldap-detail/ldap-detail.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
