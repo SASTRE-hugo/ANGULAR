@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import {LdapListComponent} from "./Model/ldap-list.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
-import {LdapDetailComponent} from "./ldap-detail/ldap-detail.component";
 import {LdapAddComponent} from "./ldap-add/ldap-add.component";
 import {LdapEditComponent} from "./ldap-edit/ldap-edit.component";
 
