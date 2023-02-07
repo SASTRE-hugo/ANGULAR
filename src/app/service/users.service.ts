@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
-import {UserLdap} from "../Model/user-ldap";
-import {LDAP_USERS} from "../Model/ldap-mock-data";
+import {UserLdap} from "../ldap-management/ldap-list/user-ldap";
+import {LDAP_USERS} from "../ldap-management/ldap-list/ldap-mock-data";
 import {Observable, of, throwError} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
-  // Liste des utilisateurs
   users: UserLdap[] = LDAP_USERS;
   private static users:UserLdap[];
 

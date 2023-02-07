@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {UsersService} from "../service/users.service";
+import {UsersService} from "../../service/users.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {FormBuilder} from "@angular/forms";
 import {LdapDetailComponent} from "../ldap-detail/ldap-detail.component";

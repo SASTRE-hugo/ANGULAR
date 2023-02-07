@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {Location} from '@angular/common';
-import {UsersService} from "../service/users.service";
-import {UserLdap} from "../Model/user-ldap";
+import {UsersService} from "../../service/users.service";
+import {UserLdap} from "../ldap-list/user-ldap";
 import {FormBuilder} from "@angular/forms";
 import {ConfirmValidParentMatcher, passwordsValidator} from "./passwords-validator.directive";
 
@@ -70,7 +70,7 @@ export abstract class LdapDetailComponent {
     this.userForm.get('nom').setValue(this.user.nom);
     this.userForm.get('prenom').setValue(this.user.prenom);
     this.userForm.get('mail').setValue(this.user.mail);
-    /* il faudra ajouter au formulaire les champs suivant
+    /*
     this.userForm.get('employeNumero').setValue(this.user.employeNumero);
     this.userForm.get('employeNiveau').setValue(this.user.employeNiveau);
     this.userForm.get('dateEmbauche').setValue(this.user.dateEmbauche;
@@ -84,7 +84,6 @@ export abstract class LdapDetailComponent {
       prenom:this.userForm.get('prenom').value,
       nomComplet:this.userForm.get('nom').value + ' ' + this.userForm.get('prenom').value,
       mail:this.userForm.get('mail').value,
-
       employeNumero:1,
       employeNiveau:1,
       dateEmbauche:'2020-04-24',

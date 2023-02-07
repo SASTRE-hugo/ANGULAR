@@ -41,11 +41,10 @@
     <tr mat-row *matRowDef="let row; columns:displayedColumns;" (click)="edit(row.login)"></tr>
 
   </table>
-  <div class="mat-elevation-z8">
+  <br><br>
     <button mat-raised-button color="primary" (click)="addUser()">
       Ajouter un utilisateur
     </button><br><br>
-  </div>
   <mat-paginator
     [pageSizeOptions]="[25,50]"
     showFirstLastButtons>
