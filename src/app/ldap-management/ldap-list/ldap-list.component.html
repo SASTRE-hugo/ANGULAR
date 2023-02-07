@@ -28,17 +28,19 @@
       <th mat-header-cell *matHeaderCellDef>Numero</th>
       <td mat-cell *matCellDef="let element">{{element.employeNumero}}</td>
     </ng-container>
+
     <ng-container matColumnDef="employeNiveau">
       <th mat-header-cell *matHeaderCellDef>Niveau</th>
       <td mat-cell *matCellDef="let element">{{element.employeNiveau}}</td>
     </ng-container>
+
     <ng-container matColumnDef="dateEmbauche">
       <th mat-header-cell *matHeaderCellDef>date Embauche</th>
       <td mat-cell *matCellDef="let element">{{element.dateEmbauche}}</td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns:displayedColumns;" (click)="edit(row.login)"></tr>
+    <tr mat-row *matRowDef="let row; columns:displayedColumns;" (click)="edit(row.id)"></tr>
 
   </table>
   <br><br>
