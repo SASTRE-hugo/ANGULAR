@@ -21,8 +21,7 @@ export class LdapEditComponent extends LdapDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    super.OnInit();
-    // Obtention de l'utilisateur
+    super.onInit();
     this.getUser();
   }
   validateForm(): void{

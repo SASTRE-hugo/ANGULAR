@@ -6,7 +6,7 @@ import {Router} from "@angular/router";
 import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
-  selector: 'app-ldap-edit',
+  selector: 'app-ldap-add',
   templateUrl: '../ldap-detail/ldap-detail.component.html',
   styleUrls: ['../ldap-detail/ldap-detail.component.scss'],
 })
@@ -19,7 +19,7 @@ export class LdapAddComponent extends LdapDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    super.OnInit();
+    super.onInit();
   }
 
   validateForm():void{
